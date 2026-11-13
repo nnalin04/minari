@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#2a1411" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Follow Minari Restaurant & Banquet in Dhanbad on Instagram, Facebook and YouTube. Taste. Celebrate. Belong." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Minari Restaurant & Banquet | Stay Connected" />
+  <meta property="og:description" content="Taste. Celebrate. Belong. Follow Minari on Instagram, Facebook and YouTube." />
+  <title>Minari Restaurant & Banquet | Connect With Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --wine: #2a1411;
+      --wine-deep: #190e0e;
+      --wine-soft: #4b211c;
+      --gold: #e3b879;
+      --gold-quiet: #be9366;
+      --ivory: #fff7e8;
+      --ink: #3d211e;
+      --ink-muted: #805f52;
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-ui: "Manrope", system-ui, -apple-system, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { min-height: 100%; }
+    body { min-height: 100vh; min-height: 100dvh; margin: 0; color: var(--ivory); background: var(--wine-deep); font-family: var(--font-ui); }
+    a { -webkit-tap-highlight-color: transparent; }
+    .scene { position: fixed; inset: 0; z-index: -2; pointer-events: none; overflow: hidden; background:
+      linear-gradient(180deg, rgba(18,8,7,.56) 0%, rgba(28,11,10,.74) 47%, rgba(13,6,7,.92) 100%),
+      url("background.jpg") center / cover no-repeat,
+      radial-gradient(circle at 75% 10%, #74452b 0, transparent 43%),
+      radial-gradient(circle at 15% 80%, #633028 0, transparent 43%),
+      linear-gradient(145deg, #3d241e 0%, #26110f 57%, #170d0e 100%);
+    }
+    .scene::before { content: ""; position: absolute; inset: 0; background: url("ornament.svg") center / 340px 340px repeat; opacity: .17; }
+    .scene::after { content: ""; position: absolute; inset: 0; background:
+      radial-gradient(ellipse at 50% 18%, rgba(201,134,76,.19), transparent 55%),
+      linear-gradient(90deg, rgba(10,4,4,.22), transparent 35%, transparent 65%, rgba(10,4,4,.22)); }
+
+    .page { min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: max(28px, env(safe-area-inset-top)) 20px max(26px, env(safe-area-inset-bottom)); }
+    .panel { position: relative; width: min(100%, 452px); padding: 26px 22px 28px; border: 1px solid rgba(232,186,122,.31); background: linear-gradient(180deg, rgba(41,19,17,.23), rgba(19,10,10,.25)); box-shadow: 0 22px 70px rgba(0,0,0,.19); text-align: center; }
+    .panel::before, .panel::after { content: ""; position: absolute; width: 22px; height: 22px; pointer-events: none; }
+    .panel::before { left: -1px; top: -1px; border-top: 2px solid var(--gold); border-left: 2px solid var(--gold); }
+    .panel::after { right: -1px; bottom: -1px; border-right: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }
+    .location { display: flex; align-items: center; justify-content: center; gap: 12px; color: #e7bb8f; font-size: .61rem; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; }
+    .location::before, .location::after { content:""; width: 24px; height: 1px; background: rgba(227,184,121,.55); }
+    .crest { display: grid; place-items: center; width: 62px; height: 62px; margin: 20px auto 16px; border: 1px solid rgba(236,190,123,.75); border-radius: 50%; outline: 1px solid rgba(227,184,121,.2); outline-offset: 5px; color: #f0ca92; font: 600 2.25rem/.9 var(--font-display); position: relative; }
+    .crest::after { content: "✦"; position: absolute; bottom: -8px; left: calc(50% - 7px); font: 12px Georgia,serif; color: var(--gold); background: #38201b; width: 14px; }
+    h1 { margin: 0; font-family: var(--font-display); font-size: clamp(4.25rem, 16vw, 5.2rem); line-height: .9; font-weight: 600; letter-spacing: .048em; text-shadow: 0 4px 25px rgba(0,0,0,.26); }
+    .category { margin: 12px auto 0; font-weight: 700; font-size: .59rem; letter-spacing: .29em; text-transform: uppercase; color: #edd6b9; }
+    .gold-rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 22px auto 13px; color: #efbe7b; }
+    .gold-rule::before, .gold-rule::after { content: ""; width: 56px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-quiet)); }
+    .gold-rule::after { transform: rotate(180deg); }
+    .gold-rule span { font-size: .82rem; }
+    .motto { margin: 0; color: #ffedd3; font: italic 500 1.7rem/1.1 var(--font-display); }
+    .intro { margin: 11px auto 0; max-width: 305px; color: #ead7c7; font-size: .77rem; font-weight: 500; line-height: 1.75; }
+    .follow-label { margin: 29px 0 13px; font-size: .60rem; font-weight: 800; text-transform: uppercase; letter-spacing: .23em; color: #e5b983; }
+    .links { display: grid; gap: 11px; }
+    .social { display: flex; align-items: center; min-height: 76px; width: 100%; padding: 12px 14px 12px 16px; gap: 14px; border-radius: 10px; background: rgba(255,247,232,.96); border: 1px solid rgba(255,255,255,.6); box-shadow: 0 5px 19px rgba(0,0,0,.16); text-decoration: none; text-align: left; color: var(--ink); transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+    .social:hover { transform: translateY(-2px); background: #fffdf7; box-shadow: 0 10px 22px rgba(0,0,0,.22); }
+    .social:active { transform: scale(.985); }
+    .social:focus-visible { outline: 3px solid #f2bf79; outline-offset: 3px; }
+    .social-icon { width: 45px; height: 45px; flex: 0 0 45px; border-radius: 10px; display: grid; place-items: center; color: #7e4130; background: #f2e4d5; }
+    .social-icon svg { display: block; width: 23px; height: 23px; }
+    .social-title { display: block; font-size: 1rem; font-weight: 800; letter-spacing: -.028em; line-height: 1.32; }
+    .social-subtitle { display: block; margin-top: 3px; color: var(--ink-muted); font-size: .65rem; font-weight: 600; line-height: 1.5; }
+    .arrow { width: 18px; height: 18px; margin-left: auto; color: #915d3b; flex: 0 0 18px; }
+    .footer { margin-top: 24px; color: #e9c8a6; font-size: .65rem; line-height: 1.8; letter-spacing: .02em; }
+    .footer .heart { color: #efbe7b; font-size: .8rem; }
+    @media (max-width: 360px) { .page { padding-inline: 12px; } .panel { padding: 22px 15px 24px; } h1 { font-size: 4rem; } .social { gap: 11px; } }
+    @media (max-height: 720px) { .page { align-items: flex-start; } .crest { margin-block: 15px 12px; width: 53px; height: 53px; font-size: 1.9rem; } .panel { padding-block: 20px; } .gold-rule { margin-block: 15px 10px; } .follow-label { margin-top: 19px; } .social { min-height: 68px; } .footer { margin-top: 15px; } }
+    @media (min-width: 700px) { .panel { padding: 36px 32px 34px; } .social { min-height: 80px; } }
+    @media (prefers-reduced-motion: reduce) { .social { transition: none; } }
+  </style>
+</head>
+<body>
+  <!-- To use your own restaurant photo, add background.jpg next to this index.html file. -->
+  <div class="scene" aria-hidden="true"></div>
+  <main class="page">
+    <section class="panel" aria-labelledby="brand-name">
+      <div class="location">Dhanbad &bull; Jharkhand</div>
+      <div class="crest" aria-hidden="true">M</div>
+      <h1 id="brand-name">MINARI</h1>
+      <p class="category">Restaurant &amp; Banquet</p>
+      <div class="gold-rule" aria-hidden="true"><span>✦</span></div>
+      <p class="motto">Taste. Celebrate. Belong.</p>
+      <p class="intro">From our table to your feed — a little more flavour, warmth and celebration.</p>
+      <p class="follow-label">Follow the Minari story</p>
+      <nav class="links" aria-label="Minari social media links">
+        <a class="social" href="https://www.instagram.com/minari.restaurant.kt?utm_source=qr&amp;mdxt=cjc3aHpwbDVwY2ts" target="_blank" rel="noopener noreferrer" aria-label="Open Minari on Instagram">
+          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.4" y="2.4" width="19.2" height="19.2" rx="5.6"/><circle cx="12" cy="12" r="4.3"/><circle cx="18" cy="6" r="1.05" fill="currentColor" stroke="none"/></svg></span>
+          <span><span class="social-title">Instagram</span><span class="social-subtitle">Photos, reels &amp; delicious moments</span></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a class="social" href="https://www.facebook.com/share/1Ex9nTghrA/" target="_blank" rel="noopener noreferrer" aria-label="Open Minari on Facebook">
+          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.2 21v-8.2h2.75l.41-3.2H14.2V7.55c0-.93.26-1.56 1.58-1.56h1.69V3.13A22.5 22.5 0 0 0 15.01 3c-2.45 0-4.12 1.5-4.12 4.25V9.6H8.1v3.2h2.79V21h3.31Z"/></svg></span>
+          <span><span class="social-title">Facebook</span><span class="social-subtitle">Updates, gatherings &amp; special days</span></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a class="social" href="https://youtube.com/@minaridesivibes?si=6jWVuWCbkm29cOcm" target="_blank" rel="noopener noreferrer" aria-label="Open Minari Desi Vibes on YouTube">
+          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="m10 9 5 3-5 3V9Z" fill="#f2e4d5"/></svg></span>
+          <span><span class="social-title">YouTube</span><span class="social-subtitle">Videos &amp; behind-the-scenes stories</span></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </nav>
+      <div class="footer">Made for shared meals &amp; memorable moments <span class="heart" aria-hidden="true">♥</span></div>
+    </section>
+  </main>
+</body>
+</html>
