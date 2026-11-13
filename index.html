@@ -3,113 +3,232 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#2a1411" />
+  <meta name="theme-color" content="#1c0d0c" />
   <meta name="color-scheme" content="dark" />
-  <meta name="description" content="Follow Minari Restaurant & Banquet in Dhanbad on Instagram, Facebook and YouTube. Taste. Celebrate. Belong." />
+  <title>Minari Restaurant &amp; Banquet · Karmatand, Dhanbad</title>
+  <meta name="description" content="Minari Restaurant &amp; Banquet Hall, Karmatand, Dhanbad. Good food, good vibes. Follow us on Instagram, Facebook and YouTube, call for free home delivery, or book the banquet for your next celebration." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Minari Restaurant & Banquet | Stay Connected" />
-  <meta property="og:description" content="Taste. Celebrate. Belong. Follow Minari on Instagram, Facebook and YouTube." />
-  <title>Minari Restaurant & Banquet | Connect With Us</title>
+  <meta property="og:site_name" content="Minari Restaurant" />
+  <meta property="og:title" content="Minari Restaurant &amp; Banquet · Dhanbad" />
+  <meta property="og:description" content="Good food. Good vibes. Follow Minari on Instagram, Facebook and YouTube." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Manrope:wght@500;600;700;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --wine: #2a1411;
-      --wine-deep: #190e0e;
-      --wine-soft: #4b211c;
+      --bg: #1c0d0c;
+      --bg-2: #2a1411;
+      --wine: #6e1d1a;
       --gold: #e3b879;
-      --gold-quiet: #be9366;
+      --gold-2: #f3d29f;
+      --gold-line: rgba(227,184,121,.32);
       --ivory: #fff7e8;
-      --ink: #3d211e;
-      --ink-muted: #805f52;
-      --font-display: "Cormorant Garamond", Georgia, serif;
-      --font-ui: "Manrope", system-ui, -apple-system, sans-serif;
+      --card: #fff8ec;
+      --card-hover: #fffdf8;
+      --ink: #33191a;
+      --ink-muted: #7d5c52;
+      --chip: rgba(255,247,232,.07);
+      --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+      --font-ui: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-deva: "Tiro Devanagari Hindi", "Noto Serif Devanagari", serif;
     }
     *, *::before, *::after { box-sizing: border-box; }
-    html { min-height: 100%; }
-    body { min-height: 100vh; min-height: 100dvh; margin: 0; color: var(--ivory); background: var(--wine-deep); font-family: var(--font-ui); }
-    a { -webkit-tap-highlight-color: transparent; }
-    .scene { position: fixed; inset: 0; z-index: -2; pointer-events: none; overflow: hidden; background:
-      linear-gradient(180deg, rgba(18,8,7,.56) 0%, rgba(28,11,10,.74) 47%, rgba(13,6,7,.92) 100%),
-      url("background.jpg") center / cover no-repeat,
-      radial-gradient(circle at 75% 10%, #74452b 0, transparent 43%),
-      radial-gradient(circle at 15% 80%, #633028 0, transparent 43%),
-      linear-gradient(145deg, #3d241e 0%, #26110f 57%, #170d0e 100%);
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; min-height: 100vh; min-height: 100dvh;
+      color: var(--ivory); font-family: var(--font-ui);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
     }
-    .scene::before { content: ""; position: absolute; inset: 0; background: url("ornament.svg") center / 340px 340px repeat; opacity: .17; }
-    .scene::after { content: ""; position: absolute; inset: 0; background:
-      radial-gradient(ellipse at 50% 18%, rgba(201,134,76,.19), transparent 55%),
-      linear-gradient(90deg, rgba(10,4,4,.22), transparent 35%, transparent 65%, rgba(10,4,4,.22)); }
+    a { -webkit-tap-highlight-color: transparent; color: inherit; }
 
-    .page { min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: max(28px, env(safe-area-inset-top)) 20px max(26px, env(safe-area-inset-bottom)); }
-    .panel { position: relative; width: min(100%, 452px); padding: 26px 22px 28px; border: 1px solid rgba(232,186,122,.31); background: linear-gradient(180deg, rgba(41,19,17,.23), rgba(19,10,10,.25)); box-shadow: 0 22px 70px rgba(0,0,0,.19); text-align: center; }
-    .panel::before, .panel::after { content: ""; position: absolute; width: 22px; height: 22px; pointer-events: none; }
-    .panel::before { left: -1px; top: -1px; border-top: 2px solid var(--gold); border-left: 2px solid var(--gold); }
-    .panel::after { right: -1px; bottom: -1px; border-right: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }
-    .location { display: flex; align-items: center; justify-content: center; gap: 12px; color: #e7bb8f; font-size: .61rem; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; }
-    .location::before, .location::after { content:""; width: 24px; height: 1px; background: rgba(227,184,121,.55); }
-    .crest { display: grid; place-items: center; width: 62px; height: 62px; margin: 20px auto 16px; border: 1px solid rgba(236,190,123,.75); border-radius: 50%; outline: 1px solid rgba(227,184,121,.2); outline-offset: 5px; color: #f0ca92; font: 600 2.25rem/.9 var(--font-display); position: relative; }
-    .crest::after { content: "✦"; position: absolute; bottom: -8px; left: calc(50% - 7px); font: 12px Georgia,serif; color: var(--gold); background: #38201b; width: 14px; }
-    h1 { margin: 0; font-family: var(--font-display); font-size: clamp(4.25rem, 16vw, 5.2rem); line-height: .9; font-weight: 600; letter-spacing: .048em; text-shadow: 0 4px 25px rgba(0,0,0,.26); }
-    .category { margin: 12px auto 0; font-weight: 700; font-size: .59rem; letter-spacing: .29em; text-transform: uppercase; color: #edd6b9; }
-    .gold-rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 22px auto 13px; color: #efbe7b; }
-    .gold-rule::before, .gold-rule::after { content: ""; width: 56px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-quiet)); }
-    .gold-rule::after { transform: rotate(180deg); }
-    .gold-rule span { font-size: .82rem; }
-    .motto { margin: 0; color: #ffedd3; font: italic 500 1.7rem/1.1 var(--font-display); }
-    .intro { margin: 11px auto 0; max-width: 305px; color: #ead7c7; font-size: .77rem; font-weight: 500; line-height: 1.75; }
-    .follow-label { margin: 29px 0 13px; font-size: .60rem; font-weight: 800; text-transform: uppercase; letter-spacing: .23em; color: #e5b983; }
-    .links { display: grid; gap: 11px; }
-    .social { display: flex; align-items: center; min-height: 76px; width: 100%; padding: 12px 14px 12px 16px; gap: 14px; border-radius: 10px; background: rgba(255,247,232,.96); border: 1px solid rgba(255,255,255,.6); box-shadow: 0 5px 19px rgba(0,0,0,.16); text-decoration: none; text-align: left; color: var(--ink); transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
-    .social:hover { transform: translateY(-2px); background: #fffdf7; box-shadow: 0 10px 22px rgba(0,0,0,.22); }
+    /* Backdrop: warm glow + faint lattice, no external images */
+    .scene { position: fixed; inset: 0; z-index: -1; pointer-events: none; background:
+      radial-gradient(120% 60% at 50% -10%, rgba(176,84,46,.42), transparent 60%),
+      radial-gradient(80% 50% at 100% 100%, rgba(110,29,26,.55), transparent 70%),
+      radial-gradient(70% 40% at 0% 80%, rgba(90,30,24,.45), transparent 70%),
+      linear-gradient(180deg, #2a1411 0%, #1c0d0c 55%, #140909 100%); }
+    .scene::before { content: ""; position: absolute; inset: 0; opacity: .07;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 4 52 28 28 52 4 28Z M28 16 40 28 28 40 16 28Z' fill='none' stroke='%23e3b879' stroke-width='1'/%3E%3C/svg%3E");
+      background-size: 56px 56px;
+      -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 70%); mask-image: linear-gradient(180deg, #000 0%, transparent 70%); }
+
+    .page { width: min(100%, 460px); margin: 0 auto;
+      padding: max(28px, env(safe-area-inset-top)) 18px max(28px, env(safe-area-inset-bottom)); }
+
+    /* Header */
+    .hero { text-align: center; }
+    .logo { position: relative; width: 104px; height: 104px; margin: 6px auto 18px; border-radius: 50%;
+      padding: 4px; background: conic-gradient(from 210deg, #b98a4f, var(--gold-2), #b98a4f, #f6ddb3, #b98a4f);
+      box-shadow: 0 10px 34px rgba(0,0,0,.45), 0 0 0 7px rgba(227,184,121,.08); }
+    .logo img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: #222; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--gold); font-size: .64rem; font-weight: 800; letter-spacing: .26em; text-transform: uppercase; }
+    .eyebrow::before, .eyebrow::after { content: ""; width: 22px; height: 1px; background: currentColor; opacity: .55; }
+    h1 { margin: 10px 0 0; font: 700 clamp(3.4rem, 15vw, 4.4rem)/.92 var(--font-display); letter-spacing: .06em; color: var(--ivory); text-shadow: 0 4px 24px rgba(0,0,0,.35); }
+    .deva { display: block; margin-top: 6px; font: 400 1.05rem/1.2 var(--font-deva); color: var(--gold-2); letter-spacing: .04em; }
+    .sub { margin: 10px 0 0; font-size: .7rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: #ecd5b6; }
+    .motto { margin: 18px 0 0; font: italic 500 1.55rem/1.15 var(--font-display); color: #ffecd0; }
+    .motto span { color: var(--gold); font-style: normal; padding: 0 .25em; }
+
+    /* Quick actions */
+    .quick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 24px 0 0; }
+    .qa { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; min-height: 76px; padding: 12px 6px;
+      border: 1px solid var(--gold-line); border-radius: 14px; background: var(--chip); text-decoration: none; color: var(--ivory);
+      font-size: .74rem; font-weight: 700; letter-spacing: .01em; transition: background .2s, border-color .2s, transform .15s; }
+    .qa svg { width: 22px; height: 22px; color: var(--gold); }
+    .qa:hover { background: rgba(255,247,232,.12); border-color: rgba(227,184,121,.6); }
+    .qa:active { transform: scale(.97); }
+
+    /* Section label */
+    .label { display: flex; align-items: center; gap: 12px; margin: 30px 0 12px; color: var(--gold); font-size: .64rem; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; }
+    .label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--gold-line), transparent); }
+
+    /* Social cards */
+    .links { display: grid; gap: 10px; }
+    .social { display: flex; align-items: center; gap: 14px; min-height: 74px; padding: 12px 14px 12px 12px; border-radius: 16px;
+      background: var(--card); color: var(--ink); text-decoration: none; box-shadow: 0 6px 22px rgba(0,0,0,.25);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+    .social:hover { background: var(--card-hover); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.32); }
     .social:active { transform: scale(.985); }
-    .social:focus-visible { outline: 3px solid #f2bf79; outline-offset: 3px; }
-    .social-icon { width: 45px; height: 45px; flex: 0 0 45px; border-radius: 10px; display: grid; place-items: center; color: #7e4130; background: #f2e4d5; }
-    .social-icon svg { display: block; width: 23px; height: 23px; }
-    .social-title { display: block; font-size: 1rem; font-weight: 800; letter-spacing: -.028em; line-height: 1.32; }
-    .social-subtitle { display: block; margin-top: 3px; color: var(--ink-muted); font-size: .65rem; font-weight: 600; line-height: 1.5; }
-    .arrow { width: 18px; height: 18px; margin-left: auto; color: #915d3b; flex: 0 0 18px; }
-    .footer { margin-top: 24px; color: #e9c8a6; font-size: .65rem; line-height: 1.8; letter-spacing: .02em; }
-    .footer .heart { color: #efbe7b; font-size: .8rem; }
-    @media (max-width: 360px) { .page { padding-inline: 12px; } .panel { padding: 22px 15px 24px; } h1 { font-size: 4rem; } .social { gap: 11px; } }
-    @media (max-height: 720px) { .page { align-items: flex-start; } .crest { margin-block: 15px 12px; width: 53px; height: 53px; font-size: 1.9rem; } .panel { padding-block: 20px; } .gold-rule { margin-block: 15px 10px; } .follow-label { margin-top: 19px; } .social { min-height: 68px; } .footer { margin-top: 15px; } }
-    @media (min-width: 700px) { .panel { padding: 36px 32px 34px; } .social { min-height: 80px; } }
-    @media (prefers-reduced-motion: reduce) { .social { transition: none; } }
+    .icon { flex: 0 0 48px; width: 48px; height: 48px; border-radius: 13px; display: grid; place-items: center; color: #fff; }
+    .icon svg { width: 25px; height: 25px; display: block; }
+    .ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
+    .fb { background: #1877f2; }
+    .yt { background: #ff0033; }
+    .text { min-width: 0; }
+    .title { display: block; font-size: 1.02rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.25; }
+    .handle { display: block; margin-top: 2px; font-size: .74rem; font-weight: 600; color: var(--ink-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .go { margin-left: auto; flex: 0 0 32px; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: #f3e4cf; color: #8a4b2c; }
+    .go svg { width: 16px; height: 16px; }
+
+    /* Feature cards */
+    .feature { position: relative; overflow: hidden; padding: 18px 18px 18px; border-radius: 16px; border: 1px solid var(--gold-line);
+      background: linear-gradient(160deg, rgba(110,29,26,.55), rgba(42,20,17,.6)); }
+    .feature + .feature { margin-top: 10px; }
+    .feature h2 { margin: 0; font: 700 1.5rem/1.1 var(--font-display); color: var(--ivory); }
+    .feature p { margin: 6px 0 0; font-size: .8rem; line-height: 1.6; color: #ead7c7; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+    .stats li { padding: 10px 6px; text-align: center; border-radius: 12px; background: rgba(0,0,0,.22); }
+    .stats b { display: block; font: 700 1.55rem/1 var(--font-display); color: var(--gold-2); }
+    .stats span { display: block; margin-top: 4px; font-size: .62rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #dcc2a6; }
+    .btn { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 14px; min-height: 48px; border-radius: 12px;
+      background: linear-gradient(180deg, var(--gold-2), var(--gold)); color: #3a1a12; font-size: .88rem; font-weight: 800; text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,.25); transition: filter .18s, transform .15s; }
+    .btn svg { width: 18px; height: 18px; }
+    .btn:hover { filter: brightness(1.05); }
+    .btn:active { transform: scale(.98); }
+    .btn.ghost { background: transparent; color: var(--gold-2); border: 1px solid rgba(227,184,121,.55); box-shadow: none; }
+    .tag { display: inline-block; margin-bottom: 8px; padding: 4px 9px; border-radius: 999px; background: rgba(227,184,121,.16); color: var(--gold-2); font-size: .6rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+
+    /* Footer */
+    .foot { margin-top: 30px; text-align: center; color: #d9bfa3; font-size: .74rem; line-height: 1.7; }
+    .foot address { font-style: normal; }
+    .foot a { color: var(--gold-2); text-decoration: none; font-weight: 700; }
+    .foot .small { margin-top: 12px; font-size: .66rem; color: #a98a74; letter-spacing: .04em; }
+
+    a:focus-visible { outline: 3px solid var(--gold-2); outline-offset: 3px; }
+
+    /* Entrance */
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .rise { animation: rise .55s cubic-bezier(.2,.7,.2,1) both; }
+    .d1 { animation-delay: .05s } .d2 { animation-delay: .12s } .d3 { animation-delay: .19s } .d4 { animation-delay: .26s } .d5 { animation-delay: .33s }
+    @media (prefers-reduced-motion: reduce) { .rise { animation: none; } .social, .qa, .btn { transition: none; } }
+
+    @media (max-width: 350px) {
+      .page { padding-inline: 12px; }
+      .qa { font-size: .68rem; min-height: 70px; }
+      .social { gap: 11px; }
+      .icon { flex-basis: 42px; width: 42px; height: 42px; }
+    }
   </style>
 </head>
 <body>
-  <!-- To use your own restaurant photo, add background.jpg next to this index.html file. -->
   <div class="scene" aria-hidden="true"></div>
   <main class="page">
-    <section class="panel" aria-labelledby="brand-name">
-      <div class="location">Dhanbad &bull; Jharkhand</div>
-      <div class="crest" aria-hidden="true">M</div>
-      <h1 id="brand-name">MINARI</h1>
-      <p class="category">Restaurant &amp; Banquet</p>
-      <div class="gold-rule" aria-hidden="true"><span>✦</span></div>
-      <p class="motto">Taste. Celebrate. Belong.</p>
-      <p class="intro">From our table to your feed — a little more flavour, warmth and celebration.</p>
-      <p class="follow-label">Follow the Minari story</p>
-      <nav class="links" aria-label="Minari social media links">
-        <a class="social" href="https://www.instagram.com/minari.restaurant.kt?utm_source=qr&amp;mdxt=cjc3aHpwbDVwY2ts" target="_blank" rel="noopener noreferrer" aria-label="Open Minari on Instagram">
-          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.4" y="2.4" width="19.2" height="19.2" rx="5.6"/><circle cx="12" cy="12" r="4.3"/><circle cx="18" cy="6" r="1.05" fill="currentColor" stroke="none"/></svg></span>
-          <span><span class="social-title">Instagram</span><span class="social-subtitle">Photos, reels &amp; delicious moments</span></span>
-          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-        </a>
-        <a class="social" href="https://www.facebook.com/share/1Ex9nTghrA/" target="_blank" rel="noopener noreferrer" aria-label="Open Minari on Facebook">
-          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.2 21v-8.2h2.75l.41-3.2H14.2V7.55c0-.93.26-1.56 1.58-1.56h1.69V3.13A22.5 22.5 0 0 0 15.01 3c-2.45 0-4.12 1.5-4.12 4.25V9.6H8.1v3.2h2.79V21h3.31Z"/></svg></span>
-          <span><span class="social-title">Facebook</span><span class="social-subtitle">Updates, gatherings &amp; special days</span></span>
-          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-        </a>
-        <a class="social" href="https://youtube.com/@minaridesivibes?si=6jWVuWCbkm29cOcm" target="_blank" rel="noopener noreferrer" aria-label="Open Minari Desi Vibes on YouTube">
-          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="m10 9 5 3-5 3V9Z" fill="#f2e4d5"/></svg></span>
-          <span><span class="social-title">YouTube</span><span class="social-subtitle">Videos &amp; behind-the-scenes stories</span></span>
-          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-        </a>
-      </nav>
-      <div class="footer">Made for shared meals &amp; memorable moments <span class="heart" aria-hidden="true">♥</span></div>
+
+    <header class="hero rise">
+      <div class="logo">
+        <picture>
+          <source srcset="assets/logo.webp" type="image/webp" />
+          <img src="assets/logo.jpg" width="96" height="96" alt="Minari logo" />
+        </picture>
+      </div>
+      <div class="eyebrow">Karmatand &middot; Dhanbad</div>
+      <h1>MINARI</h1>
+      <span class="deva" lang="hi">मिनारी रेस्टोरेंट</span>
+      <p class="sub">Restaurant &amp; Banquet Hall</p>
+      <p class="motto">Good food<span>✦</span>Good vibes</p>
+    </header>
+
+    <nav class="quick rise d1" aria-label="Quick actions">
+      <a class="qa" href="tel:+918539985885">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        Call us
+      </a>
+      <a class="qa" href="https://www.google.com/maps/search/?api=1&amp;query=Minari+Restaurant+Karmatand+Baliyapur+Road+Dhanbad">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        Directions
+      </a>
+      <a class="qa" href="minari.vcf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M19 8v6m-3-3h6"/></svg>
+        Save contact
+      </a>
+    </nav>
+
+    <div class="label rise d2">Follow us</div>
+    <nav class="links rise d2" aria-label="Minari on social media">
+      <a class="social" href="https://www.instagram.com/minari.restaurant.kt/">
+        <span class="icon ig" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+        <span class="text"><span class="title">Instagram</span><span class="handle">@minari.restaurant.kt · reels &amp; offers</span></span>
+        <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+      <a class="social" href="https://www.facebook.com/minarirestaurant/">
+        <span class="icon fb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.2 21v-8.2h2.75l.41-3.2H14.2V7.55c0-.93.26-1.56 1.58-1.56h1.69V3.13A22.5 22.5 0 0 0 15.01 3c-2.45 0-4.12 1.5-4.12 4.25V9.6H8.1v3.2h2.79V21h3.31Z"/></svg></span>
+        <span class="text"><span class="title">Facebook</span><span class="handle">Minari Restaurant · events &amp; updates</span></span>
+        <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+      <a class="social" href="https://www.youtube.com/@minaridesivibes">
+        <span class="icon yt" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 6.5v11l9-5.5-9-5.5Z"/></svg></span>
+        <span class="text"><span class="title">YouTube</span><span class="handle">@minaridesivibes · Desi Vibes</span></span>
+        <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+    </nav>
+
+    <div class="label rise d3">Celebrate with us</div>
+    <section class="feature rise d3" aria-labelledby="banquet-h">
+      <span class="tag">Banquet &amp; Lawn</span>
+      <h2 id="banquet-h">Host your next celebration</h2>
+      <p>Birthdays, kitty parties, conferences and family functions, with food from our own kitchen.</p>
+      <ul class="stats">
+        <li><b>52</b><span>Dine-in seats</span></li>
+        <li><b>100</b><span>Banquet hall</span></li>
+        <li><b>300</b><span>Open lawn</span></li>
+      </ul>
+      <a class="btn" href="tel:+919470595538">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        Enquire about a booking
+      </a>
     </section>
+
+    <section class="feature rise d4" aria-labelledby="delivery-h">
+      <span class="tag">Free home delivery</span>
+      <h2 id="delivery-h">Craving it at home?</h2>
+      <p>North Indian classics, Chinese favourites and more, delivered free. Just give us a call.</p>
+      <a class="btn ghost" href="tel:+918539985885">Call 85399 85885</a>
+    </section>
+
+    <footer class="foot rise d5">
+      <address>
+        Karmatand, opposite Surya Realcon,<br />Baliyapur Road, Dhanbad, Jharkhand
+      </address>
+      <div><a href="tel:+918539985885">85399 85885</a> &nbsp;·&nbsp; <a href="tel:+919470595538">94705 95538</a></div>
+      <div class="small">Thank you for dining with us ♥</div>
+    </footer>
+
   </main>
 </body>
 </html>
